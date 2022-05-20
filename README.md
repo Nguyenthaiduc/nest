@@ -17,6 +17,21 @@
 <br/>
 <br/>
 <img src = "https://i.imgur.com/bAH64jh.png"/>
+<br/>
+<br/>
+<img src = "https://i.imgur.com/UJCeX0j.png">
+<br/>
+<br/>
+<img src = "https://i.imgur.com/tnyE9yH.png">
+<br/>
+<br/>
+<img src="https://i.imgur.com/v27NTul.png"/>
+<br/>
+<br/>
+<img src = "https://i.imgur.com/0VrZt0I.png"/>
+<br/>
+<br/>
+<img src = "https://i.imgur.com/MHxaqzZ.png"/>
 </div>
 
 # Installation
