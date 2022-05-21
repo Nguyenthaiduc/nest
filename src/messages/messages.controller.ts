@@ -13,7 +13,9 @@ import { MessagesService } from './messages.service';
 @Controller('messages')
 export class MessagesController {
 
-  constructor(public messagesService: MessagesService) {
+  constructor(public messagesService: MessagesService,
+              public messagesService2: MessagesService,
+              public messagesService3: MessagesService) {
    
   }
 
