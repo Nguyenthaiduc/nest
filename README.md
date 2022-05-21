@@ -32,6 +32,9 @@
 <br/>
 <br/>
 <img src = "https://i.imgur.com/MHxaqzZ.png"/>
+<br/>
+<br/>
+<img src = "https://i.imgur.com/c02lSvJ.png"/>
 </div>
 
 # Installation
