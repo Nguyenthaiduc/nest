@@ -35,6 +35,15 @@
 <br/>
 <br/>
 <img src = "https://i.imgur.com/c02lSvJ.png"/>
+<br/>
+<br/>
+<img src = "https://i.imgur.com/Cq9tMtw.png"/>
+<br/>
+<br/>
+<img src = "https://i.imgur.com/0WD0gzX.png" />
+<br/>
+<br/>
+<img src = "https://i.imgur.com/olTvx3e.png"/>
 </div>
 
 # Installation
