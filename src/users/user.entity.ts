@@ -6,11 +6,13 @@ import {
   Entity,
   Column,
   PrimaryGeneratedColumn,
+  BaseEntity,
 } from 'typeorm';
 import console from 'console';
 
 @Entity()
-export class User {
+export class User extends BaseEntity{
+  
   @PrimaryGeneratedColumn()
   id: number;
 

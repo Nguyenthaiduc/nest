@@ -1,8 +1,8 @@
 /* eslint-disable */
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import { Entity, Column, PrimaryGeneratedColumn,BaseEntity } from 'typeorm';
 
 @Entity()
-export class Report {
+export class Report extends BaseEntity {
     @PrimaryGeneratedColumn()
     id : number;
 
