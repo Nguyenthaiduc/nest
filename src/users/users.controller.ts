@@ -1,16 +1,27 @@
 /* eslint-disable */
-import { Body } from '@nestjs/common';
-import { Controller, Post } from '@nestjs/common';
+import { Controller, Post,Body, Get, Patch, Param, Query } from '@nestjs/common';
 import { CreateUserDto } from './dtos/create-user.dtop';
 import { UsersService } from './users.service';
 
 @Controller('auth')
 export class UsersController {
   constructor(private usersService: UsersService) {}
-  
+
   @Post('/signup')
   createUser(@Body() body: CreateUserDto) {
     this.usersService.create(body.email, body.password);
     console.log(body);
+  }
+
+  '/auth/123123123'
+  @Get('/:id')
+  findUser(@Param('id') id: string){
+    return this.usersService.findOne(parseInt(id));
+  }
+
+  @Get()
+  findAllUsers(@Query('email') email : string){
+      return this.usersService.find(email);
+
   }
 }

@@ -1,34 +1,37 @@
 /* eslint-disable */
-import {AfterInsert,AfterRemove,AfterUpdate, Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
-import { IsEmail, IsString } from 'class-validator';
+import {
+  AfterInsert,
+  AfterRemove,
+  AfterUpdate,
+  Entity,
+  Column,
+  PrimaryGeneratedColumn,
+} from 'typeorm';
 import console from 'console';
 
 @Entity()
-
 export class User {
   @PrimaryGeneratedColumn()
-  id!: number;
-  
+  id: number;
+
   @Column()
-  @IsEmail()
   email: string;
 
   @Column()
-  @IsString()
-  password : string;
+  password: string;
 
   @AfterInsert()
-  logInsert(){
-    console.log("Inserted user with id ",this.id);
+  logInsert() {
+    console.log('Inserted user with id ', this.id);
   }
 
   @AfterUpdate()
-  logUpdate(){
-    console.log('Updated User with id',this.id);
+  logUpdate() {
+    console.log('Updated User with id', this.id);
   }
 
   @AfterRemove()
-  logRemove(){
-    console.log("Remove User with id",this.id);
+  logRemove() {
+    console.log('Remove User with id', this.id);
   }
 }
