@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { Controller, Post,Body, Get, Patch, Param, Query } from '@nestjs/common';
+import { Controller, Post,Body, Get, Patch, Param, Query, Delete } from '@nestjs/common';
 import { CreateUserDto } from './dtos/create-user.dtop';
 import { UsersService } from './users.service';
 
@@ -24,4 +24,10 @@ export class UsersController {
       return this.usersService.find(email);
 
   }
+
+  @Delete('/:id')
+  removeUser(@Param('id') id: string) {
+      return this.usersService.remove(parseInt(id));
+  }
+
 }
