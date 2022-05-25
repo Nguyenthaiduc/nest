@@ -3,16 +3,15 @@ import {
   AfterInsert,
   AfterRemove,
   AfterUpdate,
+  BaseEntity,
   Entity,
   Column,
   PrimaryGeneratedColumn,
-  BaseEntity,
 } from 'typeorm';
-import console from 'console';
+import { Exclude } from 'class-transformer';
 
 @Entity()
-export class User extends BaseEntity{
-  
+export class User extends BaseEntity {
   @PrimaryGeneratedColumn()
   id: number;
 
@@ -20,6 +19,7 @@ export class User extends BaseEntity{
   email: string;
 
   @Column()
+  @Exclude()
   password: string;
 
   @AfterInsert()
