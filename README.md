@@ -6,3 +6,4 @@
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
 <img src = "https://i.imgur.com/8tIkvoJ.png" />
+<img src = "https://i.imgur.com/HGGocSv.png"/>
