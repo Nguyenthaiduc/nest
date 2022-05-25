@@ -7,3 +7,7 @@
 
 <img src = "https://i.imgur.com/8tIkvoJ.png" />
 <img src = "https://i.imgur.com/HGGocSv.png"/>
+<img src = "https://i.imgur.com/7IyMXP4.png"/>
+<img src = "https://i.imgur.com/dSYPSWM.png"/>
+<img src = "https://i.imgur.com/SW4ocpl.png"/>
+<img src =  "https://i.imgur.com/tMzPQSL.png"/>
