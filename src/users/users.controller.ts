@@ -26,13 +26,12 @@ export class UsersController {
     console.log(body);
   }
 
-
   @UseInterceptors(ClassSerializerInterceptor)
   @Get('/:id')
   async findUser(@Param('id') id: string) {
     const user = await this.usersService.findOne(parseInt(id));
-    if(!user) {
-        throw new NotFoundException("User not Found");
+    if (!user) {
+      throw new NotFoundException('User not Found');
     }
     return user;
   }
@@ -46,7 +45,6 @@ export class UsersController {
   removeUser(@Param('id') id: string) {
     return this.usersService.remove(parseInt(id));
   }
-
   @Patch('/:id')
   updateUser(@Param('id') id: string, @Body() body: UpdateUserDto) {
     return this.usersService.update(parseInt(id), body);

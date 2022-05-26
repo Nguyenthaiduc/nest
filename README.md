@@ -14,3 +14,7 @@
 <img src = "https://i.imgur.com/Vvko7km.png"/>
 <img src = "https://i.imgur.com/zWz1O7C.png"/>
 <img src = "https://i.imgur.com/8rm9Mc0.png"/>
+<img src = "https://i.imgur.com/R7O30PJ.png"/>
+<img src = "https://i.imgur.com/DLre2TI.png"/>
+<img src = "https://i.imgur.com/5g1IIWJ.png"/>
+<img src = "https://i.imgur.com/tpfITaZ.png"/>
