@@ -5,7 +5,7 @@
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
-<img src = "https://i.imgur.com/8tIkvoJ.png" />
+<img src = "https://i.imgur.com/8tIkvoJ.png"/>
 <img src = "https://i.imgur.com/HGGocSv.png"/>
 <img src = "https://i.imgur.com/7IyMXP4.png"/>
 <img src = "https://i.imgur.com/dSYPSWM.png"/>
@@ -20,3 +20,9 @@
 <img src = "https://i.imgur.com/tpfITaZ.png"/>
 <img src = "https://i.imgur.com/nG8uQYz.png"/>
 <img src = "https://i.imgur.com/SUfrLk1.png"/>
+<img src = "https://i.imgur.com/ZWgnm0S.png"/>
+<img src = "https://i.imgur.com/FSVSsT3.png"/>
+<img src = "https://i.imgur.com/07uwter.png"/>
+<img src = "https://i.imgur.com/WOw9wPd.png"/>
+<img src = "https://i.imgur.com/GpIIKU8.png"/>
+<img src = "https://i.imgur.com/a89K6Bc.png"/>

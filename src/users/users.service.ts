@@ -37,6 +37,3 @@ export class UsersService {
   }
 }
 
-const usersService = new UsersService({} as any);
-// usersService.update(3, { email: 'abc@gmail.com', password: '123456' });//
-//bạn làm gì đây @ , them email bawngf tay
