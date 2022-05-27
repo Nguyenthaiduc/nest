@@ -15,6 +15,9 @@ export class UsersService {
   }
 
   findOne(id: number): Promise<User> {
+    if (!id) {
+      return null;
+    }
     return this.repo.findOne({ where: { id } });
   }
 
@@ -29,7 +32,7 @@ export class UsersService {
     }
     return this.repo.remove(user);
   }
-  
+
   async update(id: number, attrs: Partial<User>) {
     console.log(id);
     const user = await this.findOne(id);
