@@ -26,3 +26,7 @@
 <img src = "https://i.imgur.com/WOw9wPd.png"/>
 <img src = "https://i.imgur.com/GpIIKU8.png"/>
 <img src = "https://i.imgur.com/a89K6Bc.png"/>
+<img src = "https://i.imgur.com/LO64Y0y.png"/>
+<img src = "https://i.imgur.com/RN176v9.png"/>
+<img src = "https://i.imgur.com/EElvVx3.png"/>
+<img src = "https://i.imgur.com/bq6AzPe.png"/>

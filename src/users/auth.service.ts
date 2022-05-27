@@ -1,6 +1,11 @@
 /* eslint-disable */
 import { Injectable, BadRequestException } from '@nestjs/common';
 import { UsersService } from './users.service';
+import { randomBytes, scrypt as _scrypt } from 'crypto';
+import { promisify } from 'util';
+
+const scrypt = promisify(_scrypt);
+
 
 @Injectable()
 export class AuthService {
@@ -14,6 +19,14 @@ export class AuthService {
         }
 
         // Hash the users password
+        // Generate a salt
+        const salt = randomBytes(8).toString('hex'); //tạo 8 chữ ngẫu nhiên theo mã hex
+
+        // Hash the salt and the password together
+        const hash = (await scrypt(password, salt, 32)) as Buffer; //convert type unknown to Buffer
+        
+        // Join the hash result and the salt together
+        const result = salt + '.' + hash.toString('hex'); //salt.hash
 
         // Create a new user and save it
 
