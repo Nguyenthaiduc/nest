@@ -33,3 +33,10 @@ content-type: application/json
 {
     "email" : "xyz@gmail.com"
 }
+
+### Set a color
+GET http://localhost:3000/auth/colors/blue
+
+
+### Get the Color
+GET http://localhost:3000/auth/colors
