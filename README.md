@@ -42,4 +42,7 @@ Testing Unit
 <img src = "https://i.imgur.com/t0PpIsR.png"/>
 <img src = "https://i.imgur.com/PYApvkC.png"/>
 <img src = "https://i.imgur.com/9BzSkj9.png"/>
+Testing e2e
+<img src = "https://i.imgur.com/WQtc9gB.png"/>
+<img src = "https://i.imgur.com/EbV8VLF.png"/>
 
