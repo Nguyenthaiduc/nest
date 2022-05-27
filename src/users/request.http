@@ -3,16 +3,16 @@ POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-    "email" : "123@gmail.com",
+    "email" : "test@gmail.com",
     "password" : "123456"
 }
 
-###Sign In
+###Sign In as an existing user
 POST http://localhost:3000/auth/signin
 content-type: application/json
 
 {
-    "email" : "123@gmail.com",
+    "email" : "test@gmail.com",
     "password" : "123456"
 }
 
@@ -33,10 +33,3 @@ content-type: application/json
 {
     "email" : "xyz@gmail.com"
 }
-
-### Set a color
-GET http://localhost:3000/auth/colors/blue
-
-
-### Get the Color
-GET http://localhost:3000/auth/colors
