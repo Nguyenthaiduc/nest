@@ -7,14 +7,17 @@ import { User } from './user.entity';
 @Injectable()
 export class UsersService {
   constructor(@InjectRepository(User) private repo: Repository<User>) {}
+
   create(email: string, password: string) {
     const user = this.repo.create({ email, password });
     console.log(this.repo);
     return this.repo.save(user);
   }
+
   findOne(id: number): Promise<User> {
     return this.repo.findOne({ where: { id } });
   }
+
   find(email: string) {
     return this.repo.find({ where: { email } });
   }
@@ -26,6 +29,7 @@ export class UsersService {
     }
     return this.repo.remove(user);
   }
+  
   async update(id: number, attrs: Partial<User>) {
     console.log(id);
     const user = await this.findOne(id);
