@@ -10,7 +10,6 @@ import {
   Delete,
   NotFoundException,
   Session,
-  UseInterceptors,
 } from '@nestjs/common';
 import { CreateUserDto } from './dtos/create-user.dto';
 import { UpdateUserDto } from './dtos/update-user.dto';
@@ -19,13 +18,11 @@ import { Serialize } from '../interceptors/serialize.interceptors';
 import { UserDto } from './dtos';
 import { AuthService } from './auth.service';
 import { CurrentUser } from './decorator/user-current.decorator';
-import { CurrentUserInterceptor } from './interceptors/current-user.interceptors';
 import { User } from './user.entity';
 
 
 @Controller('auth')
 @Serialize(UserDto) // Disabled Password
-@UseInterceptors(CurrentUserInterceptor)
 export class UsersController {
   constructor(
       private usersService: UsersService,
