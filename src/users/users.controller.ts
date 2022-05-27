@@ -17,6 +17,7 @@ import { UsersService } from './users.service';
 import { Serialize } from '../interceptors/serialize.interceptors';
 import { UserDto } from './dtos';
 import { AuthService } from './auth.service';
+import { CurrentUser } from './decorator/user-current.decorator';
 
 
 @Controller('auth')
@@ -27,10 +28,16 @@ export class UsersController {
       private authService : AuthService,
       ) {}
 
+  // @Get('/whoami')
+  // whoAmI(@Session() session : any) {
+  //   return this.usersService.findOne(session.userId);
+  // }
+  
   @Get('/whoami')
-  whoAmI(@Session() session : any) {
-    return this.usersService.findOne(session.userId);
+  whoAmI(@CurrentUser() user: string) {
+    return user;
   }
+
 
   @Post('signout')
   signOut(@Session() session : any) {
