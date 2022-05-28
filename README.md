@@ -62,4 +62,6 @@ Testing e2e
 <img src = "https://i.imgur.com/QKggYxk.png"/>
 <img src = "https://i.imgur.com/Bqnjmbk.png"/>
 <img src = "https://i.imgur.com/KNALTXZ.png"/>
+<img src = "https://i.imgur.com/1HZyGiu.png"/>
+<img src = "https://i.imgur.com/X0YWFMi.png"/>
 
