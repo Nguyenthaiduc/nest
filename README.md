@@ -45,4 +45,6 @@ Testing Unit
 Testing e2e
 <img src = "https://i.imgur.com/WQtc9gB.png"/>
 <img src = "https://i.imgur.com/EbV8VLF.png"/>
+<img src = "https://i.imgur.com/bkX29MH.png"/>
+<img src = "https://i.imgur.com/9FpGGAI.png"/>
 
