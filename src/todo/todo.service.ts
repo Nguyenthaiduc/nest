@@ -5,7 +5,6 @@ import { Repository } from 'typeorm';
 import { Todo } from './todo.entity';
 import { CreateTodoDto } from './dtos/create-todo.dto';
 
-
 @Injectable()
 export class TodoService {
     constructor(@InjectRepository(Todo) private repo: Repository<Todo>) { }
