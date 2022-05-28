@@ -50,4 +50,11 @@ Testing e2e
 <img src = "https://i.imgur.com/adlpUWo.png"/>
 <img src = "https://i.imgur.com/4NUQHDv.png"/>
 <img src = "https://i.imgur.com/UbQCHx8.png"/>
+<img src = "https://i.imgur.com/WMyzJpZ.png"/>
+<img src = "https://i.imgur.com/kRZvF17.png"/>
+<img src = "https://i.imgur.com/cAwg6wP.png"/>
+<img src = "https://i.imgur.com/HFVzLgX.png"/>
+<img src = "https://i.imgur.com/5crbz8C.png"/>
+<img src = "https://i.imgur.com/gZTwzXM.png"/>
+<img src = "https://i.imgur.com/kwKp6VS.png"/>
 

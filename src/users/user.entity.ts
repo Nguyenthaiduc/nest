@@ -1,4 +1,5 @@
 /* eslint-disable */
+import { Report } from 'src/reports/reports.entity';
 import {
   AfterInsert,
   AfterRemove,
@@ -7,6 +8,7 @@ import {
   Entity,
   Column,
   PrimaryGeneratedColumn,
+  OneToMany
 } from 'typeorm';
 
 
@@ -20,6 +22,9 @@ export class User extends BaseEntity {
 
   @Column()
   password: string;
+
+  @OneToMany(()=> Report,(report)=> report.user)
+  reports: Report[];
 
   @AfterInsert()
   logInsert() {
