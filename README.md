@@ -48,4 +48,6 @@ Testing e2e
 <img src = "https://i.imgur.com/bkX29MH.png"/>
 <img src = "https://i.imgur.com/9FpGGAI.png"/>
 <img src = "https://i.imgur.com/adlpUWo.png"/>
+<img src = "https://i.imgur.com/4NUQHDv.png"/>
+<img src = "https://i.imgur.com/UbQCHx8.png"/>
 
