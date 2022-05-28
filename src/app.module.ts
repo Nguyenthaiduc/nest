@@ -10,6 +10,8 @@ import { ReportsModule } from './reports/reports.module';
 import { UsersModule } from './users/users.module';
 import { User } from './users/user.entity';
 import { Report } from './reports/reports.entity';
+import { TodoController } from './todo/todo.controller';
+import { TodoModule } from './todo/todo.module';
 const cookieSession = require('cookie-session');
 
 // export const AppDataSource = TypeOrmModule.forRoot({
@@ -37,9 +39,10 @@ const cookieSession = require('cookie-session');
        },
      }),
       ReportsModule,
-       UsersModule
+       UsersModule,
+       TodoModule
       ],
-  controllers: [AppController],
+  controllers: [AppController, TodoController],
   providers: [
     AppService,
     {
