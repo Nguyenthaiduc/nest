@@ -20,7 +20,7 @@ import { UserDto } from './dtos';
 import { AuthService } from './auth.service';
 import { CurrentUser } from './decorator/user-current.decorator';
 import { User } from './user.entity';
-import { AuthGuard } from './guards/auth.guard';
+import { AuthGuard } from '../guards/auth.guard';
 
 @Controller('auth')
 @Serialize(UserDto) // Disabled Password
