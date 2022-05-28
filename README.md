@@ -57,4 +57,8 @@ Testing e2e
 <img src = "https://i.imgur.com/5crbz8C.png"/>
 <img src = "https://i.imgur.com/gZTwzXM.png"/>
 <img src = "https://i.imgur.com/kwKp6VS.png"/>
+<img src = "https://i.imgur.com/DfjXoSQ.png"/>
+<img src = "https://i.imgur.com/5wxVvwH.png"/>
+<img src = "https://i.imgur.com/QKggYxk.png"/>
+<img src = "https://i.imgur.com/Bqnjmbk.png"/>
 
