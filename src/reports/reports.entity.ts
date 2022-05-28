@@ -13,6 +13,9 @@ export class Report extends BaseEntity {
   @PrimaryGeneratedColumn()
   id: number;
 
+  @Column({ default: false })
+  approved: boolean;
+
   @Column()
   price: number;
 
