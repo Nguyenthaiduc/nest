@@ -1,5 +1,6 @@
 /* eslint-disable */
 import { Report } from 'src/reports/reports.entity';
+import { Todo } from 'src/todo/todo.entity';
 import {
   AfterInsert,
   AfterRemove,
@@ -28,6 +29,9 @@ export class User extends BaseEntity {
 
   @OneToMany(()=> Report,(report)=> report.user)
   reports: Report[];
+
+  @OneToMany(()=> Todo,(todo)=> todo.user)
+  Todo: Report[];
 
   @AfterInsert()
   logInsert() {

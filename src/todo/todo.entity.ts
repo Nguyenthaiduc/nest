@@ -1,12 +1,14 @@
 /* eslint-disable */
 import {
-  BaseEntity,
-  Entity,
-  PrimaryGeneratedColumn,
-  Column,
-  CreateDateColumn,
-  UpdateDateColumn,
+    BaseEntity,
+    Entity,
+    PrimaryGeneratedColumn,
+    Column,
+    CreateDateColumn,
+    UpdateDateColumn,
+    ManyToOne,
 } from 'typeorm';
+import { User } from 'src/users/user.entity';
 
 @Entity()
 export class Todo extends BaseEntity {
@@ -23,8 +25,12 @@ export class Todo extends BaseEntity {
   description?: string;
 
   @CreateDateColumn()
-  createAt : Date;
+  createAt?: Date;
 
   @UpdateDateColumn()
-  updatedAt: Date;
+  updatedAt?: Date;
+
+  @ManyToOne(()=> User, (user)=> user.reports)
+  user : User;
 }
+

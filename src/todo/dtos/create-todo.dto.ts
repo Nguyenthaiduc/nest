@@ -1,8 +1,9 @@
 /* eslint-disable */
-import { IsString, IsNumber, IsBoolean, IsDate, Min } from 'class-validator';
+import { Type } from 'class-transformer';
+import { IsString, IsNumber, IsBoolean, IsDate } from 'class-validator';
 export class CreateTodoDto {
+  @Type(() => Number)
   @IsNumber()
-  @Min(1)
   readonly id: number;
 
   @IsString()
@@ -15,8 +16,8 @@ export class CreateTodoDto {
   readonly description?: string;
 
   @IsDate()
-  readonly createAt: Date;
+  readonly createAt?: Date;
 
   @IsDate()
-  readonly updateAt: Date;
+  readonly updateAt?: Date;
 }

@@ -1,10 +1,9 @@
 /* eslint-disable */
-import { Controller,Body,Post,Get,Patch,Delete,Query,UseGuards } from '@nestjs/common';
+import { Controller,Body,Post,Get,Patch,Delete,Query,Param,UseGuards } from '@nestjs/common';
 import { TodoService } from './todo.service';
 import { CreateTodoDto } from './dtos/create-todo.dto';
 import { Todo } from './todo.entity';
 import { AuthGuard } from 'src/guards/auth.guard';
-import { Param } from '@nestjs/common';
 
 @Controller('todo')
 export class TodoController {
@@ -34,13 +33,13 @@ export class TodoController {
     //update a todo
     @Patch('/:id')
     @UseGuards(AuthGuard)
-    async updateTodo(@Param('id') id : string,@Body() body : CreateTodoDto) {
+    async updateTodo(@Param('id') id : string,@Body() body : CreateTodoDto): Promise<Todo> {
         return this.todoService.update(parseInt(id),body);
     }
     //delete a todo
     @Delete('/:id')
     @UseGuards(AuthGuard)
-    async deleteTodo(@Param('id') id : string) {
+    async deleteTodo(@Param('id') id : string): Promise<Todo> {
         return await this.todoService.remove(parseInt(id));
     }
 }

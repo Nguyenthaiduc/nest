@@ -8,10 +8,10 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { AppService } from './app.service';
 import { ReportsModule } from './reports/reports.module';
 import { UsersModule } from './users/users.module';
+import { TodoModule } from './todo/todo.module';
 import { User } from './users/user.entity';
 import { Report } from './reports/reports.entity';
-import { TodoController } from './todo/todo.controller';
-import { TodoModule } from './todo/todo.module';
+import { Todo } from './todo/todo.entity';
 const cookieSession = require('cookie-session');
 
 // export const AppDataSource = TypeOrmModule.forRoot({
@@ -33,7 +33,7 @@ const cookieSession = require('cookie-session');
           return {
             type: 'sqlite',
             database: config.get<string>('DB_NAME'),
-            entities: [User, Report],
+            entities: [User, Report,Todo],
             synchronize: true,
           }; 
        },
@@ -42,13 +42,14 @@ const cookieSession = require('cookie-session');
        UsersModule,
        TodoModule
       ],
-  controllers: [AppController, TodoController],
+  controllers: [AppController],
   providers: [
     AppService,
     {
       provide: APP_PIPE,
       useValue: new ValidationPipe({
         whitelist: true,
+        transform: true,
       }),
     },
   ],

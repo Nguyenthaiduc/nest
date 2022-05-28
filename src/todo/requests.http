@@ -1,0 +1,10 @@
+###Create A Todo
+POST http://localhost:3000/todo
+content-type: application/json
+
+{  
+    "title": "Lau Nha",
+    "completed": false,
+    "description": "Lau Nha vao luc 11h"
+    
+}
