@@ -4,6 +4,7 @@ import { TodoService } from './todo.service';
 import { CreateTodoDto } from './dtos/create-todo.dto';
 import { Todo } from './todo.entity';
 import { AuthGuard } from 'src/guards/auth.guard';
+import { UpdateTodoDto } from './dtos/update-todo.dto';
 
 @Controller('todo')
 export class TodoController {
@@ -33,8 +34,8 @@ export class TodoController {
     //update a todo
     @Patch('/:id')
     @UseGuards(AuthGuard)
-    async updateTodo(@Param('id') id : string,@Body() body : CreateTodoDto): Promise<Todo> {
-        return this.todoService.update(parseInt(id),body);
+    async updateTodo(@Param('id') id : string,@Body() body : UpdateTodoDto): Promise<Todo> {
+        return await this.todoService.update(parseInt(id),body);
     }
     //delete a todo
     @Delete('/:id')

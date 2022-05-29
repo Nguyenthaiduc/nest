@@ -10,10 +10,10 @@ export class TodoService {
     constructor(@InjectRepository(Todo) private repo: Repository<Todo>) { }
 
     //Get All Todo
-    async find({id}: CreateTodoDto) {
+    async find({title}: CreateTodoDto) {
         return await this.repo.createQueryBuilder()
             .select('*')
-            .where('id = :id',{id})
+            .where('title = :title',{title})
             .getRawMany();
     }
 
@@ -37,7 +37,11 @@ export class TodoService {
 
     //Add a Todo
     async create(createTodoDto: CreateTodoDto) {
-       const todo = await this.create(createTodoDto);
+       const todo = this.repo.create(createTodoDto);
+        if(!todo) {
+            throw new NotFoundException("Can't create Todo")
+        }
+
        return this.repo.save(todo);
        
     }

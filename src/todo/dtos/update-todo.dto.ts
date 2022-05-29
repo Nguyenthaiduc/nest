@@ -1,14 +1,17 @@
 /* eslint-disable */
-import { IsString, IsNumber, IsBoolean } from 'class-validator';
-export class CreateTodoDto {
+import { IsString, IsOptional, IsBoolean } from 'class-validator';
+export class UpdateTodoDto {
 
   @IsString()
+  @IsOptional()
   readonly title: string;
 
   @IsBoolean()
+  @IsOptional()
   readonly completed?: boolean;
 
   @IsString()
+  @IsOptional()
   readonly description?: string;
 
 }

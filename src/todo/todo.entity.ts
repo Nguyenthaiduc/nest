@@ -18,10 +18,10 @@ export class Todo extends BaseEntity {
   @Column()
   title: string;
 
-  @Column()
+  @Column({ default: false })
   completed?: boolean;
 
-  @Column()
+  @Column({ type: 'text', nullable: true })
   description?: string;
 
   @CreateDateColumn()
