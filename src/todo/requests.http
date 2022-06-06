@@ -3,7 +3,7 @@ POST http://localhost:3000/todo
 content-type: application/json
 
 {   
-    "title": "Rua Bat",
+    "title": "Nau Com 333",
     "completed": false,
     "description": "Lau Nha vao luc 25h"
     
@@ -13,18 +13,17 @@ GET http://localhost:3000/todo
 
 ### Get a Todo
 
-GET http://localhost:3000/todo/1
+GET http://localhost:3000/todo/6
 
 ### Delete a Todo
-DELETE http://localhost:3000/todo/2
+DELETE http://localhost:3000/todo/1
 
 ###Update Todo
-PATCH http://localhost:3000/todo/1
-
+PATCH http://localhost:3000/todo/6
 content-type: application/json
 
 {   
-    "title": "Quet Nha",
+    "title": "Nau Com 2222",
     "completed": true,
     "description": "Lau Nha vao luc 25h"
     
