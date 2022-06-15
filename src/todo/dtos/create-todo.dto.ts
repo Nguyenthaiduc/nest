@@ -8,7 +8,7 @@ export class CreateTodoDto {
   @IsBoolean()
   readonly completed?: boolean;
 
-  @IsString()
-  readonly description?: string;
+  // @IsString()
+  // readonly description?: string;
 
 }

@@ -3,15 +3,15 @@ import { IsString, IsOptional, IsBoolean } from 'class-validator';
 export class UpdateTodoDto {
 
   @IsString()
-  @IsOptional()
+  // @IsOptional()
   readonly title: string;
 
   @IsBoolean()
-  @IsOptional()
+  // @IsOptional()
   readonly completed?: boolean;
 
   @IsString()
-  @IsOptional()
+  // @IsOptional()
   readonly description?: string;
 
 }
